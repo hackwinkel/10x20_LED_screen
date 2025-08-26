@@ -1,6 +1,8 @@
 # 10x20_LED_screen
 hardware design files and software applications for an esp32c3 + 200 "smart LEDs"  project.
 
+![blocktris](https://hackwinkel.nl/blocktris1.jpg)
+
 ## General
 
 The PCB contains an ESP32-C3, 4 buttons and 200 ws2812B-like "smart LED" components that each contain three 256 level PWM controllers to drive the Red, Green and Blue LED channels. This means that each LED can theoretically display 2^24 colour combinations. The LEDs are supplied with the necessary data using a serial protocol, and are all connected in series in a single "string", so to drive all the LEDs, the ESP32-C3 must send 200 * 24 = 4800 bits of data. The LEDs need this data to be supplied at a net rate of 800,000 bits per second.
