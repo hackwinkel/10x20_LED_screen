@@ -72,4 +72,7 @@ As Espressif regulary makes breaking changes to their API, it is important that 
 
 After you have installed the Espressif board manager package, you can __select the "ESP32-C3 Dev-module"__, which is compatible with the ESP32-C3 "super-mini" module that is usedin this project.
 
+
+![blocktris](https://hackwinkel.nl/blocktris.gif)
+
 Please make sure that you have __set the option "USB CDC enable on boot" to "enabled"__ (Arduino tools menu), and that you have selected the correct serial device.
